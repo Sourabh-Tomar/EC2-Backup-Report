@@ -102,7 +102,7 @@ def lambda_handler(event, context):
         
         if result_list:
             for result in result_list:
-                email_body += f"<tr><td>{result['InstanceName']}</td><td>{result['BackupStatus']}</td><td>{result['ResourceId']}</td><td>{result['ResourceType']}</td><td>{result['MessageCategory']}</td></tr>"
+                email_body += f"<tr><td>{result['InstanceName']}</td><td>{result['BackupStatus']}</td><td>{result['ResourceID']}</td><td>{result['ResourceType']}</td><td>{result['MessageCategory']}</td></tr>"
         else:
             email_body += "<tr><td colspan='5'>No EC2 backup jobs found for today.</td></tr>"
         
